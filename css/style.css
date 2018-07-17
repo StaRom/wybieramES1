@@ -1,0 +1,1944 @@
+/*---------- 1. Project 1 the upbar ----------*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&subset=latin-ext');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Roboto', sans-serif;  
+}
+
+.mainmenu2{
+    display: none;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.fa-times {
+    display: none;
+}
+
+.img-sm {
+    display: none;
+}
+
+.break{
+    display: none;
+}
+
+.mainCointainer {
+    margin: 0 auto;
+    height: 104px;
+    width: 940px;
+    border-bottom: 1px solid #e5e5e5;  
+}
+
+.logo{
+    width: 50%;
+    float: left;
+    margin: 16.5px 0;   
+}
+
+a{
+    text-decoration: none;
+}
+
+a:focus{  
+    outline: none;
+}
+
+.searchbar{
+    width: 50%;
+    float: left;  
+}
+
+.search{
+    float: right;
+    margin: 31px 0;
+    position: relative;  
+}
+
+input[name="searchinput"]{
+    width: 212px;
+    height: 42px;  
+    border: 1px solid  #e5e8e8;
+    padding-left: 12px;  
+    padding-right:40px;  
+}
+
+input[name="searchinput"]:focus{
+    outline: none;
+}
+
+#inputsearch::-webkit-input-placeholder {
+    color: #666666;
+}
+
+.buttonsearch{
+    background: none;
+    border: none;
+    position: absolute;
+    right: 12px;
+    top: 11px;
+}
+
+.fas{
+    color: #af0061;
+    font-size: 18px;       
+}
+
+/*---------- 2. Project 1 - Header ----------*/
+
+header {
+    width: 940px;
+    margin: 0 auto;    
+    padding-top: 10px;
+    position: relative;
+}
+
+h1{
+    font-size: 24px;  
+    color: #666;             
+}
+
+header p {
+    text-align: justify;
+    line-height: 22px;
+    font-size: 15px;
+    color: #999999;     
+    border-bottom: 1px solid #e5e5e5;      
+    padding-bottom: 20px
+}
+
+.purple{
+    color: #af0061;    
+}
+
+header a {
+    text-decoration: none;
+    color: #af0061;    
+}
+
+/*---------- 3. Project 1 - Menu ----------*/
+
+.clearfix {
+    float:none;
+    clear:both;
+}
+
+nav {
+    width: 100%;
+    position: relative;    
+    padding-top: 10px
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;       
+}
+
+header .mainmenu li{
+    display: block;
+    float: left;
+    position: relative;
+}
+
+header .mainmenu a{
+    display: block;    
+}
+
+header .submenu{
+    position: absolute;
+    padding: 0;    
+}
+
+.maincategory {       
+    width: 210px;    
+    height: 45px;
+    line-height: 45px;
+    float: left;
+    margin-right: 20px;
+    padding: 0 10px;    
+    list-style: none;    
+    color: #af0061;
+    border: 1px solid #e5e5e5;    
+    transition: .3s; 
+}
+
+.maincategory:hover{       
+    background-color: #af0061;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.maincategory:hover a{    
+    color: #ffffff;
+    transition: .3s;       
+}
+
+.maincategory ul{
+    display: none;            
+    transition: 0.5s;        
+}
+
+.maincategory:hover ul{
+    display: block;        
+    transition: 0.5s;            
+}
+
+.submenu li{
+    width: 190px;            
+    line-height: 45px;
+    padding: 0 10px;    
+    background-color: #f2b8d8;
+    list-style: none;    
+    color: #af0061;
+    border: 1px solid #e5e5e5;         
+    transition: .3s;    
+}
+
+.submenu li:hover{    
+    background-color: #af0061;    
+    color: #ffffff;
+    transition: .3s;       
+}
+
+.maincategory .submenu a{
+    color: #af0061;
+}
+
+.submenu li:hover a{    
+    color: #ffffff;
+    transition: .3s;       
+}
+
+.arrow{
+    margin-left: 30px;
+    transition: .1s;
+}
+
+.maincategory:hover .arrow{    
+    transform: rotate(90deg)  translateX(50%);    
+    font-size: 25px;
+    transition: .1s;
+    color: #ffffff;        
+}
+
+header .mainmenu .submenu2 {
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    padding-left: 10px
+}
+
+header .mainmenu .submenu li:hover .submenu2 {
+    display: block;
+    position: absolute;
+    left: 200px;
+    top: 0;
+    padding-left: 10px
+}
+
+.maincategory .submenu .submenu2 a{
+    color: #af0061;
+}
+
+.submenu .submenu2 li:hover a{    
+    color: #ffffff;
+    transition: .3s;       
+}
+
+.arrow2{
+    margin-left: 30px;
+    transition: .2s;
+}
+
+.subcategory:hover .arrow2{    
+    transform: scale(1.5);    
+    margin-left: 50px;
+    font-size: 20px;
+    transition: .3s;
+    color: #ffffff;        
+}
+
+/*---------- 4. Project 1 - Main content ----------*/
+
+.secondcontainer{
+    width: 940px;    
+    height: 750px;
+    margin: 0 auto;
+    padding: 0;    
+    margin-top: 30px;
+    border-bottom: 1px solid #e5e5e5;      
+}
+
+.container{
+    width: 100%;    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box-left{    
+    float: left;    
+    margin-bottom: 20px;
+    transition: .5s;
+}
+
+.box-right{    
+    float: right;    
+    margin-bottom: 20px;
+    transition: .5s;
+}
+
+.box-left:hover,
+.box-right:hover{
+    transition: .5s;
+    background: #FEE9F4;
+    box-shadow: 0px 0px 25px grey;    
+}
+
+.person{    
+    background-image: url(../pic/p1-box.jpg);
+    background-size: contain;
+    width: 229px;
+    height: 221px;    
+    margin: 0;
+    padding: 0;  
+    float: left;        
+}
+
+.description{
+    width: 229px;
+    height: 221px;
+    border: 1px solid #e5e5e5;    
+    box-sizing: border-box;
+    padding: 10px 15px;
+    float: left;    
+    transition: .5s;
+}
+
+.description:hover{
+    transition: .5s;
+    background: #FEE9F4;
+}
+
+.title{
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #af0061;    
+    margin: 15px 0;
+}
+
+.text{
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+.breadcrumbs{
+    font-size: 13px;    
+    margin: 30px 0;
+}
+
+.breadcrumbs a{    
+    color: #af0061;    
+}
+
+/*---------- 5. Project 1 - Footer ----------*/
+
+footer {
+    width: 940px;
+    height: 60px;
+    margin: 0 auto;    
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #666666;        
+}
+
+.logofooter{
+    width: 50%;
+    float: left;
+    margin: 0;
+}
+
+footer img{
+    margin-right: 15px;
+    float: left;    
+}
+
+.logofooter p{
+    font-size: 15px;
+    margin: 0;
+    line-height: 20px;
+}
+
+.contact{
+    width: 50%;
+    float: right;
+    margin: 0;    
+}
+
+.contact h5{
+    font-size: 15px;
+    margin: 0;
+    line-height: 20px;
+    margin-left: 30px;
+}
+
+.contact p{
+    display: inline-block;
+    font-size: 15px;
+    margin: 0;
+    line-height: 20px;        
+    margin-left: 30px;
+}
+
+footer a{    
+    color: #666666;     
+    transition: .3s;
+}
+
+footer a:hover{    
+    color: #af0061;    
+    transition: .3s;
+}
+
+/*---------- 6. Project 1.2 - Single product ----------*/
+
+.menu-product {
+    width: 940px;
+    margin: 0 auto;      
+    font-size: 11px;
+    color: #666666;
+    margin-top: 15px;
+}
+
+.product {
+    width: 940px;
+    margin: 0 auto;      
+}
+
+.product h1{
+    font-size: 24px;
+    color: #333333;
+}
+
+.product-description {
+    width: 940px;
+    height: 500px;
+    margin: 0 auto;      
+    margin-top: 35px;
+    border-bottom: 1px solid #e5e5e5;  
+}
+
+.product-description h2{
+    display: flex;
+    align-items: center;
+}
+
+.product-description h2::after{
+    content: " ";
+    flex-grow: 1;
+    border: 1px solid #e5e5e5;
+    margin-left: 20px;    
+}
+
+.product-card{
+    width: 100%;
+    float: leftł
+}
+
+.product-picture{
+    float: left;
+}
+
+.big-picture{
+    width: 430px;    
+    height: 300px;
+    background-image: url(../pic/product.jpg);
+    background-size: contain;
+}
+
+.carousel-picture{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fa-circle{
+    font-size: 8px;
+    color: #666666;    
+}
+
+.fa-circle:hover{    
+    color: #af0061;    
+}
+
+.details-product{
+    max-width: 510px;
+    float: right;
+    margin: 0;
+    padding: 0;    
+}
+
+.details-product ul{
+    margin: 0;    
+}
+
+.details-product li{
+    width: 510px;        
+    line-height: 27px;
+    font-size: 16px;
+    color: #666666;
+    list-style: none;        
+    margin-left: 10px;
+    margin-top: 0px;        
+}
+
+.product-description p{ 
+    text-align: justify;    
+}
+
+.menu-product ul{
+    padding: 0;
+    margin: 0;
+    padding-top: 5px
+}
+
+.menu-product li {
+    float: left;
+    list-style: none;            
+    font-size: 12px;    
+    margin-top: 0;
+    margin: 0 5px;    
+}
+
+.menu-product li:first-child {
+    margin-left: 0px;
+}
+
+.menu-product li a {
+    color: #666666;    
+}
+
+.menu-product li a:hover {
+    color: #af0061;    
+}
+
+.company-database {
+    width: 400px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #e5e8e8;    
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+.company-database:hover {        
+    transition: 0.5s;
+    background-color: #af0061;       
+}
+
+.company-database p {
+    color: #af0061;    
+    font-size: 13px;
+    margin: 0px 20px;
+    float: left;
+    transition: 0.5s;
+}
+
+.company-database:hover p {
+    color: #ffffff;        
+    transition: 0.5s;
+}
+
+.company-database .fa-angle-right{
+    color: #af0061;    
+    font-size: 13px;
+    transition: 0.5s;     
+}
+
+.company-database:hover .fa-angle-right{
+    color: #ffffff;        
+    transition: 0.5s;
+    padding-left: 20px;
+}
+
+.buy-product {
+    width: 360px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #e5e8e8;    
+    background-color: #af0061;       
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+.buy-product:hover {        
+    transition: 0.5s;
+    background-color: #ffffff;       
+}
+
+.buy-product p {
+    color: #ffffff;    
+    font-size: 13px;
+    margin: 0px 20px;
+    float: left;
+    transition: 0.5s;
+}
+
+.buy-product:hover p {
+    color: #af0061;        
+    transition: 0.5s;
+}
+
+.buy-product .fa-angle-right{
+    color: #ffffff;    
+    font-size: 13px;
+    transition: 0.5s;     
+}
+
+.buy-product:hover .fa-angle-right{
+    color: #af0061;        
+    transition: 0.5s;
+    padding-left: 20px;
+}
+
+/*---------- 6. Project 1.3 - Modal window ----------*/
+
+.modal-box{    
+    position: relative;
+    margin: 10% auto;
+    width: 550px;
+    height: 485px;    
+    border: 1px solid  #e5e8e8;
+    padding: 0;
+    background-color: #ffffff;
+    transform: scale(0);
+    transition: 0.5s;
+    opacity: 0;    
+}
+
+.modal-close{    
+    position: absolute;
+    right: -22px;
+    top: -22px;
+    border: 1px solid #af0061;
+    width: 20px;
+    height: 20px;    
+    text-align: center;
+    background-color: #af0061;
+    color: #ffffff;
+}
+
+.modal-close .fa-times{    
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    font-size: 17px;
+    color: #ffffff;        
+}
+
+.modal-close:hover{    
+    background-color: #ffffff;
+    color: #af0061;
+}
+
+.modal-close:hover .fa-times{    
+    color: #af0061;        
+}
+
+.modal-form{
+    width: 450px;
+    margin: 0 auto;
+    padding: 0;    
+}
+
+.modal-name,
+.modal-organization,
+.modal-phone,
+.modal-email,
+.modal-message{
+    margin: 5px auto;    
+    color: #666666;
+    font-size: 14px;
+}
+
+input[name="form"]{
+    width: 430px;
+    height: 27px;  
+    border: 1px solid  #e5e8e8;  
+    padding-left: 10px;  
+    padding-right: 10px;  
+}
+
+input[name="form, form2"]:focus{
+    outline: none;
+}
+
+textarea[name="form2"]{    
+    width: 430px;
+    height: 105px;  
+    border: 1px solid  #e5e8e8;
+    padding-left: 10px;  
+    padding-right: 10px;  
+    padding-top: 10px;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.modal-box h1{
+    color: #af0061;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;    
+}
+
+.modal-button{    
+    width: 170px;
+    height: 40px;
+    background-color: #af0061;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+    border: none;
+    margin-top: 25px;    
+}
+
+.modal-button:hover{
+    background-color: #910151;
+    transition: 0.3s;
+    cursor: grab;
+}
+
+.modal-button .fa-angle-right{
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.modal-button:hover .fa-angle-right{
+    color: #ffffff;
+    margin-left: 15px;
+    margin-right: -5px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.modal-box button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;    
+    pointer-events: none;
+    transition: 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000;      
+}
+
+.modal:target {
+    margin: 0 auto;
+    transition: 0.3s;
+    background: rgba(209, 209, 209, 0.8);     
+}
+
+.modal:target > .modal-box{
+    opacity: 1;
+    transition: 1s;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: 0.9s;       
+}
+
+/*------------ 6. Project 1.4 - Search results ------------*/
+
+.search-products{
+    max-width: 940px;
+    height: 900px;
+    margin: 0 auto;              
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;    
+    border-bottom: 1px solid #e5e5e5;            
+}
+
+.search-menu{
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    height: 610px;
+    background-color: #eeeeee;                
+    margin-right: 20px;
+}
+
+.search-menu h2{
+    padding-left: 20px;
+    font-size: 18px;
+    color: #910151;    
+}
+
+.search-menu ul {    
+    margin: 0;
+    padding: 0;    
+}
+
+.search-menu li {    
+    list-style: none;    
+    font-size: 13px;   
+}
+
+.li-level-1{
+    display: block;
+    color: #333333;    
+    padding-bottom: 25px;
+}
+
+.li-level-2{
+    color: #666666;
+    padding-top: 10px;
+}
+
+.li-level-3{
+    display: block;
+    color: #333333;    
+    padding-bottom: 10px;
+}
+
+.small-input1{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #ffffff;    
+    margin-right: 10px;
+    margin-left: 20px;
+    box-sizing: border-box; 
+    padding: 0;        
+}
+
+.small-input2{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    margin-left: 42px;
+    box-sizing: border-box; 
+    padding: 0;        
+}
+
+.small-input3{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #ffffff;    
+    margin-right: 10px;
+    margin-left: 20px;
+    box-sizing: border-box; 
+    padding: 0;        
+}
+
+.input-full{    
+    background-color: #910151;        
+}
+
+.search-box{
+    width: 720px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.search-result{        
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid #e5e5e5;        
+    box-sizing: border-box;    
+}
+
+.search-result:nth-child(1){
+    margin-top: 0px;
+}
+
+.search-result:last-child{
+    border-bottom: none;            
+}
+
+.sr-box-left{
+    width: 215px;
+    height: 150px;            
+}
+
+.sr-box-left img{
+    width: 215px;
+    height: 150px;            
+    margin: 0;
+    padding: 0;
+}
+
+.sr-box-right{
+    max-width: 505px;
+    background-size: cover;
+    margin-left: 25px;
+    box-sizing: border-box;
+}
+
+.sr-box-right h2{
+    font-size: 16px;    
+    color: #af0061;
+    margin-top: 0;
+}
+
+.sr-box-right h3{
+    font-size: 16px;    
+    color: #666666;
+}
+
+.sr-box-right p{
+    font-size: 12px;    
+    color: #333333;
+    text-align: justify;
+}
+
+.sr-box-right a{
+    color: #af0061;
+}
+
+.sr-box-right .fa-angle-right{
+    font-size: 12px;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+.sr-box-right a:hover .fa-angle-right{    
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.search-pages{
+    max-width: 100%;
+    padding: 25px 0;   
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+.search-pages ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;    
+    color: #cccccc;    
+}
+
+.search-pages li{
+    float: left;   
+    margin: 0 5px;
+}
+
+.search-pages a{    
+    color: #666666;    
+}
+
+.search-pages a:hover{
+    color: #af0061;    
+}
+
+.search-pages .page-active{
+    color: #af0061;    
+}
+
+.search-pages .fas{
+    font-size: 13px;
+    color: #af0061;    
+}
+
+.pages-slash{
+    font-size: 17px;
+    line-height: 17px;
+}
+
+/*------------ 7. Project 1 - RWD ------------*/
+
+@media screen and (min-width: 1681px) {
+
+    /*---------- 1. Project 1 the upbar ----------*/
+    
+    .mainCointainer {      
+        height: 104px;
+        width: 1450px;              
+    }
+
+    /*---------- 2. Project 1 - Header ----------*/
+
+    header {
+        width: 1450px;
+        margin: 0 auto;    
+        padding-top: 20px;      
+    }
+    
+    /*---------- 3. Project 1 - Menu ----------*/
+
+    .maincategory {       
+        width: 250px;            
+        margin-right: 30px;
+        padding: 0 15px;            
+    }
+
+    .submenu li{
+        width: 230px;                    
+    }
+
+    header .mainmenu .submenu2 {
+        left: 240px;    
+    }
+
+    header .mainmenu .submenu li:hover .submenu2 {    
+        left: 240px;    
+    }
+
+    /*---------- 4. Project 1 - Main content ----------*/
+    
+    .secondcontainer{
+        width: 1450px;    
+        height: 500px;
+        margin: 0 auto;
+        padding: 0;    
+        margin-top: 30px;
+        border-bottom: 1px solid #e5e5e5;  
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }
+    
+    .person-maxwidth-right{    
+        float: right;        
+    }
+
+    .person-maxwidth-left{    
+        float: left;        
+    }
+
+    /*---------- 5. Project 1 - Footer ----------*/
+    
+    footer {
+        width: 1450px;
+    }
+
+    .contact h5{        
+        margin-left: 280px;
+    }
+
+    .contact p{    
+        margin-left: 280px;
+    }
+
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1680px) {
+
+    /*---------- 1. Project 1 the upbar ----------*/
+    
+    .mainCointainer {      
+        height: 104px;
+        width: 1100px;              
+    }
+
+    /*---------- 2. Project 1 - Header ----------*/
+
+    header {
+        width: 1100px;
+        margin: 0 auto;    
+        padding-top: 20px;      
+    }
+    
+    /*---------- 3. Project 1 - Menu ----------*/
+
+    .maincategory {       
+        width: 220px;            
+        margin-right: 30px;
+        padding: 0 15px;            
+    }
+
+    .submenu li{
+        width: 200px;                    
+    }
+
+    header .mainmenu .submenu2 {
+        left: 210px;    
+    }
+
+    header .mainmenu .submenu li:hover .submenu2 {    
+        left: 210px;    
+    }
+
+    /*---------- 4. Project 1 - Main content ----------*/
+
+    .secondcontainer{
+        width: 1100px;    
+        height: 850px;
+        margin-top: 30px;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between
+    }    
+    
+/*    ------------------------------*/
+            
+    .container{
+        width: 100%;    
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box-left{    
+        float: left;    
+        margin-bottom: 20px;
+        transition: .5s;
+        width: 100%;   
+        box-sizing: border-box;
+        max-height: 253px;
+    }
+         
+    .box-right{    
+        float: right;    
+        margin-bottom: 20px;
+        transition: .5s;
+        width: 100%;   
+        max-height: 253px;
+    }
+
+    .box-left:hover,
+    .box-right:hover{
+        transition: .5s;
+        background: #FEE9F4;
+        box-shadow: 0px 0px 25px grey;    
+        box-sizing: border-box;   
+        max-width: 520px;    
+    }
+    
+    .person{    
+        background-image: url(../pic/p1-box.jpg);
+        background-size: contain;
+        width: 260px;
+        height: 253px;    
+        margin: 0;
+        padding: 0;  
+        float: left;        
+    }
+
+    .description{
+        width: 260px;
+        height: 253px;
+        border: 1px solid #e5e5e5;    
+        box-sizing: border-box;
+        padding: 10px 15px;
+        float: left;    
+        transition: .5s;      
+    }
+        
+    .description:hover{
+        transition: .5s;
+        background: #FEE9F4;
+        box-sizing: border-box;
+    }
+    
+    .title{
+        font-size: 24px;
+        text-transform: uppercase;
+        color: #af0061;    
+        margin: 15px 0;
+    }
+
+    .text{
+        font-size: 14px;
+        margin: 15px 0;
+    }
+
+    .breadcrumbs{
+        font-size: 13px;    
+        margin: 30px 0;
+    }
+
+    .breadcrumbs a{    
+        color: #af0061;    
+    }
+    
+    /*---------- 5. Project 1 - Footer ----------*/
+    
+    footer {
+        width: 1100px;
+    }
+
+    .contact h5{        
+        margin-left: 120px;
+    }
+
+    .contact p{    
+        margin-left: 120px;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    
+    /*---------- 1. Project 1 the upbar ----------*/
+    
+    .mainCointainer {      
+      height: 104px;
+      width: 720px;              
+    }
+
+    /*---------- 2. Project 1 - Header ----------*/
+
+    header {
+      width: 720px;
+      margin: 0 auto;    
+      padding-top: 20px;      
+    }
+    
+    /*---------- 3. Project 1 - Menu ----------*/
+
+    nav {
+        width: 100%;
+        position: relative;    
+        padding-top: 10px
+    }
+    
+    .maincategory {       
+        width: 240px;        
+        margin-right: 0px;
+        padding: 0 15px;        
+        box-sizing: border-box;
+    }
+    
+    .submenu li{
+        width: 210px;            
+        box-sizing: border-box;
+    }
+
+    header .mainmenu .submenu2 {
+        box-sizing: border-box;    
+        left: 199px;    
+    }
+    
+    header .mainmenu .submenu li:hover .submenu2 {    
+        box-sizing: border-box;    
+        left: 199px;    
+    }
+
+    /*---------- 4. Project 1 - Main content ----------*/
+
+    .secondcontainer{
+        width: 720px;    
+        height: 2300px;
+        margin: 0 auto;
+        padding: 0;    
+        margin-top: 50px;
+        border-bottom: 1px solid #e5e5e5;  
+    }
+
+    .container, .box-left, .box-right{
+        width: 100%;    
+    }
+    
+    .person, .description{    
+        width: 50%;
+        height: 360px;    
+    }
+
+    .description{        
+        padding: 20px 20px;    
+    }
+
+
+    .title{
+        font-size: 2em;    
+    }
+
+    .text{
+        font-size: 1em;    
+    }
+
+    .breadcrumbs{
+        font-size: 0.9em;    
+
+    }
+    
+    .person-xswidth-right{
+        float: right;
+    }
+    
+    /*---------- 5. Project 1 - Footer ----------*/
+    
+    footer {
+        width: 720px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .break{
+        display: inline-block;
+    }
+    
+    .contact h5{        
+        margin-left: 10px;
+    }
+
+    .contact p{    
+        margin-left: 10px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    /*---------- 1. Project 1 the upbar ----------*/
+    
+    .mainCointainer { 
+      margin-top: 70px;
+      height: 104px;
+      width: 550px;          
+    }
+    
+    .logo-upbar{
+        width: 85%;        
+        padding-top: 5px;
+    }
+    
+    /*---------- 2. Project 1 - Header ----------*/
+
+    header {
+      width: 550px;
+      margin: 0 auto;    
+      padding-top: 20px;      
+    }
+        
+    /*---------- 3. Project 1 - Menu ----------*/
+
+    .mainmenu{
+        display: none;
+    }
+    
+    .mainmenu2{
+        display: block;
+    }
+
+    header .mainmenu2 li{
+        display: block;
+        float: left;
+        position: relative;
+    }
+
+    header .mainmenu2 a{
+        display: block;    
+    }
+    
+    nav{        
+        box-sizing: border-box;
+        padding-top: 10px;
+        width: 550px;
+        height: 80px;
+        position: fixed;
+        top: 0;                       
+        background-color: rgba(255, 255, 255, 0.9);        
+    }
+   
+    .mainmenu2{        
+        position: relative;
+        right: 0;
+        width: 100%;        
+    }
+
+    .fa-bars{
+        position: absolute;
+        right: 0;
+        font-size: 40px;        
+        z-index: 10;
+        display: block;
+    }
+    
+    .hamburger:hover .fa-bars{
+        position: absolute;
+        right: 0;
+        font-size: 40px;        
+        z-index: 19;
+        display: none;
+    }
+    
+    
+    .hamburger .fa-times{        
+        position: absolute;
+        right: 0;
+        font-size: 40px;        
+        display: none;                
+        opacity: 0;
+
+    }
+    
+    .hamburger:hover .fa-times{        
+        position: absolute;
+        top: -2px;
+        right: 2px;
+        font-size: 45px;        
+        display: block;         
+        opacity: 1;      
+        z-index: 20;
+        }
+            
+    nav .mainmenu2 .hamburger{
+        position: absolute;
+        top: 10px;
+        right: 10px;        
+        font-size: 30px;        
+        z-index: 15;           
+        transition: 0.3s;                            
+    }
+    
+    .hamburger {
+        line-height: 30px;
+    }
+    
+    .hamburger .hamburger2{
+        display: none;                            
+        transform: translateX(100%);
+        transition: 0.3s;
+            
+    }
+    
+    .hamburger:hover .hamburger2{
+        display: block;            
+        transform: translateX(-100%);
+        transition: 0.3s;
+    }
+        
+    .hamburger2 {
+        display: none;                            
+        transition: 0.3s;
+        position: absolute;
+        top: 40px;                
+        float: left;
+        margin-right: 0;
+        font-size: 20px;            
+        background: #ffffff;          
+    }
+    
+    .hamburger2 li{
+        width: 300px;        
+        margin-right: 0px;        
+        transition: 0.3s;
+    }
+
+    .submenu li{
+        width: 190px;            
+        line-height: 35px;
+        padding: 0 10px;    
+        background-color: #f2b8d8;
+        list-style: none;    
+        color: #af0061;
+        border: 1px solid #e5e5e5;                 
+        transition: .3s;        
+        z-index: 1000;
+}
+    
+    .arrow{
+        margin-left: 30px;
+        transition: .1s;
+    }
+
+    .maincategory:hover .arrow{    
+        transform: rotate(90deg)  translateX(50%);    
+        font-size: 25px;
+        transition: .1s;
+        color: #ffffff;        
+    }
+
+    header .mainmenu2 .submenu2 {
+        display: none;
+        position: absolute;
+        left: 200px;
+        left: 0;
+        top: 0;
+        padding-left: 10px
+    }
+
+    header .mainmenu2 .submenu li:hover .submenu2 {
+        display: block;    
+        position: absolute;
+        left: -1px;
+        top: 35px;
+        padding-left: 0px;
+    }
+
+    .maincategory .submenu .submenu2 a{
+        color: #af0061;
+    }
+
+    .submenu .submenu2 li:hover a{    
+        color: #ffffff;
+        transition: .3s;       
+    }
+
+    .subcatagory .arrow{    
+        transform: rotate(0deg)  translateX(0%);    
+        font-size: 25px;
+        transition: .1s;
+        color: #af0061;        
+    }
+    
+    .subcatagory:hover .arrow{    
+        transform: rotate(90deg)  translateX(50%);    
+        font-size: 25px;
+        transition: .1s;
+        color: #ffffff;        
+    }
+
+    /*---------- 4. Project 1 - Main content ----------*/
+
+    .secondcontainer{
+        width: 550px;    
+        height: 1780px;
+        margin: 0 auto;
+        padding: 0;    
+        margin-top: 50px;
+        border-bottom: 1px solid #e5e5e5;  
+    }
+
+    .container, .box-left, .box-right{
+        width: 100%;    
+    }
+    
+    .person{    
+    background-image: url(../pic/p2-box.jpg);
+    }
+
+    .person, .description{    
+        width: 50%;
+        height: 275px;    
+    }
+
+    .description{        
+        padding: 20px 20px;    
+    }
+
+    .title{
+        font-size: 2em;    
+    }
+
+    .text{
+        font-size: 1em;    
+    }
+
+    .breadcrumbs{
+        font-size: 0.9em;    
+    }
+    
+    .person-xswidth-right{
+        float: right;
+    }
+    
+    /*---------- 5. Project 1 - Footer ----------*/
+    
+    footer {
+        width: 550px;
+        height: 130px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;            
+    }
+
+    .logofooter{
+        width: 80%;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .contact{
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 80%;
+        float: none;        
+    }
+    
+    .contact h5{        
+        margin-left: 0px;
+    }
+
+    .contact p{    
+        margin-left: 0px;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+
+    /*---------- 1. Project 1 the upbar ----------*/
+    
+    .mainCointainer { 
+        min-width: 240px;        
+        max-width: 100%;
+        margin-top: 70px;
+        height: 104px;
+        padding: 5px;
+        box-sizing: border-box;        
+    }
+      
+    /*---------- 2. Project 1 - Header ----------*/
+
+    header {
+        min-width: 240px;
+        max-width: 100%;
+        margin: 0 auto;    
+        padding-top: 20px;  
+        padding-left: 10px;
+        padding-right: 10px;      
+        box-sizing: border-box;
+    }
+   
+     .logo-upbar{
+        width: 100%;        
+        padding-top: 5px;        
+        box-sizing: border-box;
+    }
+        
+    .logo{
+        width: 100%;
+        float: left;
+        margin: 16.5px 0;   
+    }
+    
+    .searchbar{
+        width: 100%;
+        float: left;  
+        margin: 0 auto;
+        box-sizing: border-box;        
+    }
+
+    .search{
+        width: 100%;
+        float: left;
+        margin: 20px 0px;
+        position: relative;  
+        box-sizing: border-box;
+    }
+
+    input[name="searchinput"]{
+        min-width: 212px;        
+        width: 95%;
+        max-width: 550px;
+        height: 42px;  
+        border: 1px solid  #e5e8e8;
+        padding-left: 5px;  
+        padding-right: 25px;  
+        box-sizing: border-box;        
+    }
+    
+     .buttonsearch{                
+        right: 35px;
+    }
+        
+    /*---------- 3. Project 1 - Menu ----------*/
+
+    .mainmenu{
+        display: none;
+    }
+    
+    .mainmenu2{
+        display: block;        
+    }
+
+    header .mainmenu2 li{
+        display: block;
+        float: left;
+        position: relative;
+}
+
+    header .mainmenu2 a{
+        display: block;         
+    }
+    
+    
+    nav{                        
+        padding-top: 10px;
+        min-width: 240px;
+        width: 100%;        
+        height: 80px;
+        position: fixed;
+        top: 0;                       
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.9);      
+        box-sizing: border-box;        
+        }
+       
+    .mainmenu2{        
+        position: relative;
+        right: 10px;
+        width: 100%;               
+    }
+
+    .fa-bars{
+        position: absolute;
+        right: 0;
+        font-size: 40px;        
+        z-index: 10;
+        display: block;
+    }
+    
+    .hamburger:hover .fa-bars{
+        position: absolute;
+        right: 0;
+        font-size: 40px;        
+        z-index: 19;
+        display: none;
+    }
+        
+    .hamburger .fa-times{        
+        position: absolute;
+        right: 0;
+        font-size: 40px;        
+        display: none;                
+        opacity: 0;        
+    }
+    
+    .hamburger:hover .fa-times{        
+        position: absolute;
+        top: -2px;
+        right: 2px;
+        font-size: 45px;        
+        display: block;         
+        opacity: 1;      
+        z-index: 20;        
+    }
+        
+    nav .mainmenu2 .hamburger{
+        position: absolute;
+        top: 10px;
+        right: 10px;        
+        font-size: 30px;        
+        z-index: 15;           
+        transition: 0.3s;                
+    }
+    
+    .hamburger {
+        line-height: 30px;                
+    }
+    
+    .hamburger .hamburger2{
+        display: none;                            
+        transform: translateX(100%);
+        transition: 0.3s;            
+    }
+    
+    .hamburger:hover .hamburger2{
+        display: block;            
+        transform: translateX(-100%);
+        transition: 0.3s;
+    }
+
+    .hamburger2 {
+        display: none;                            
+        transition: 0.3s;
+        position: absolute;
+        top: 40px;                
+        float: left;
+        margin-right: 0;
+        font-size: 20px;            
+        background: #ffffff;                  
+    }
+    
+    .hamburger2 li{        
+        min-width: 260px;        
+        max-width: 400px;
+        margin-right: 0px;        
+        transition: 0.3s;        
+    }
+
+    .mainmenu2 .hamburger2 .submenu{
+        margin-left: -10px;        
+    }
+    
+    .mainmenu2 .hamburger2 .submenu li{
+        width: 190px;            
+        line-height: 45px;
+        padding: 0 10px;            
+        background-color: #f2b8d8;
+        list-style: none;    
+        color: #af0061;
+        border: 1px solid #e5e5e5;                 
+        transition: .3s;                
+        z-index: 1000;        
+    }
+    
+    .arrow{
+        margin-left: 30px;
+        transition: .1s;
+    }
+
+    .hamburger2 .maincategory:hover .arrow{    
+        transform: rotate(90deg)  translateX(50%);    
+        font-size: 25px;
+        transition: .1s;
+        color: #ffffff;        
+    }
+
+    header .mainmenu2 .submenu2 {
+        display: none;
+        position: absolute;
+        left: 200px;
+        left: 0;
+        top: 0;
+        padding-left: 10px;        
+    }
+
+    header .mainmenu2 .submenu li:hover .submenu2 {
+        display: block;    
+        position: absolute;
+        left: -1px;
+        top: 35px;
+        padding-left: 0px;              
+    }
+
+    .maincategory .submenu .submenu2 a{
+        color: #af0061;
+    }
+
+    .submenu .submenu2 li:hover a{    
+        color: #ffffff;
+        transition: .3s;       
+    }
+
+    .subcatagory .arrow{    
+        transform: rotate(0deg)  translateX(0%);    
+        font-size: 25px;
+        transition: .1s;
+        color: #af0061;        
+    }
+    
+    .subcatagory:hover .arrow{    
+        transform: rotate(90deg)  translateX(50%);    
+        font-size: 25px;
+        transition: .1s;
+        color: #ffffff;        
+    }
+
+    /*---------- 4. Project 1 - Main content ----------*/
+
+    .secondcontainer{
+        min-width: 240px;
+        width: 100%;
+        height: 1780px;
+        margin: 0;
+        padding: 0;    
+        margin-top: 50px;        
+        border-bottom: 1px solid #e5e5e5;  
+        box-sizing: border-box;               
+    }
+
+    .container, .box-left, .box-right{
+        width: 100%;            
+    }
+    
+    .person img{        
+        display: block;
+        width: 100%;
+    }
+    
+    .person{    
+        max-width: 100%;        
+        background-image: none;
+        width: 100%;
+        height: 100%;
+        float: right;                
+    }
+        
+    .description{    
+        width: 100%;
+        min-width: 240px;
+        padding: 20px 20px; 
+        height: 100%;
+    }
+
+    .title{
+        font-size: 2em;  
+    }
+
+    .text{
+        font-size: 1em; 
+    }
+
+    .breadcrumbs{
+        font-size: 0.9em;    
+    }
+    
+    .person-xswidth-right{
+        float: right;
+    }
+    
+    .xxs-flex-down{
+        display: flex;
+        flex-direction: column-reverse;        
+    }
+    
+    /*---------- 5. Project 1 - Footer ----------*/
+    
+    footer {        
+        min-width: 240px;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;                    
+    }
+
+      .break{
+        display: inline-block;          
+    }    
+    
+    .logofooter{
+        width: 80%;
+        float: none;
+        margin: 0 auto;        
+    }
+
+    .contact{
+        margin: 0 auto;
+        margin-top: 20px;
+        width: 80%;
+        float: none;                
+    }
+    
+    .contact h5{        
+        margin-left: 0px;
+    }
+
+    .contact p{    
+        margin-left: 0px;
+    }
+    
+}
